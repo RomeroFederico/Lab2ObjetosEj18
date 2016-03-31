@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Ejercicio_18.Computadora;
-using Ejercicio_18.Enumerados.Marca;
-using Ejercicio_18.Enumerados.Procesador;
+using Ejercicio_18Computadora;
+using Ejercicio_18Enumerados.Marca;
+using Ejercicio_18Enumerados.Procesador;
 
 namespace Ejercicio_18.Program
 {
@@ -28,6 +28,19 @@ namespace Ejercicio_18.Program
         static void Main(string[] args)
         {
             Console.Title = "Ejercicio Nro. 18";
+
+            Computadora miComputadora = new Computadora(EMarca.Samsung, EProcesador.Intel_Core_i7, (float)5.75, false);
+
+            miComputadora.InformarEstado();
+
+            miComputadora.SetPeso(6);
+            miComputadora.SetProcesador((EProcesador)8);
+            miComputadora.SetMarca((EMarca)0);
+            miComputadora.Encender();
+
+            miComputadora.InformarEstado();
+
+            Console.ReadKey();
         }
     }
 }

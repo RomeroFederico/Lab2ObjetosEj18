@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ejercicio_18.Enumerados.Procesador;
-using Ejercicio_18.Enumerados.Marca;
+using Ejercicio_18Enumerados.Procesador;
+using Ejercicio_18Enumerados.Marca;
 
-namespace Ejercicio_18.Computadora
+namespace Ejercicio_18Computadora
 {
     class Computadora
     { 
@@ -13,6 +13,10 @@ namespace Ejercicio_18.Computadora
         private EProcesador _procesador;
         private float _peso;
         private bool _estaEncendida;
+        private EMarca eMarca;
+        private EProcesador eProcesador;
+        private double p;
+        private bool p_2;
 
         public Computadora(EMarca marca, EProcesador procesador, float peso, bool estaEncendida)
         {
